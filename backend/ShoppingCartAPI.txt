@@ -1,0 +1,63 @@
+Shopping Cart
+ 
+You own a grocery store and here is your current inventory:
+const inventory = [
+{ name: 'bacon', unitPrice: 10.99, quantity: 10},
+{ name: 'eggs', unitPrice: 3.99, quantity: 10},
+{ name: 'cheese', unitPrice: 6.99, quantity: 10},
+{ name: 'chives', unitPrice: 1.00, quantity: 10},
+{ name: 'wine', unitPrice: 11.99, quantity: 10},
+{ name: 'brandy', unitPrice: 17.55, quantity: 10},
+{ name: 'bananas', unitPrice: 0.69, quantity: 10},
+{ name: 'ham', unitPrice: 2.69, quantity: 10},
+{ name: 'tomatoes', unitPrice: 3.26, quantity: 10},
+{ name: 'tissue', unitPrice: 8.45, quantity: 10},
+];
+Your goal as the new technical lead is to do the following:
+. Create an application where the user can see a menu of the available inventory
+. Allow the user to select the items he wants to purchase into a shopping cart
+. Allow the user to update the number of items in the shopping cart
+. Allow the user to delete items from the shopping cart
+
+
+
+API Endpoints:
+GET:
+http://localhost:3000/inventory?category&page=1&limit=10
+
+POST:
+http://localhost:3000/purchase
+Body: {
+    items: [{
+        id:'',
+        quantity:1
+    }]
+}
+
+find inventory by ids
+update quantity of item.
+
+In case need to manage Cart, add API to get, add, remove, update Cart.
+
+
+
+
+Choose MongoDB for easy to scalable
+Products:
+    snacks : {
+        id:'',
+        name:'',
+        price:10.99,
+        gram:500
+    },
+    drinks : {
+        id:'',
+        name:'',
+        price:10.99,
+        liter:10
+    },
+
+
+
+
+
