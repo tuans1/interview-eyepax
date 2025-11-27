@@ -49,12 +49,5 @@ src/
 - Compose utility classes directly in components (see `HomePage`) or extend Tailwind via `@layer`.
 - Custom brand colors are available under the `brand` palette (e.g., `text-brand`, `text-brand-muted`).
 
-## Interview Tips
-
-- Use the prepared folders to keep new logic organized.
-- Wrap new API calls inside `services/` and mirror their types under `types/`.
-- Keep shared UI or behaviors inside `components/` and `hooks/` to stay DRY.
-- Extend the router by adding new entries inside `src/routes/AppRouter.tsx`.
-
 Happy coding!
 
